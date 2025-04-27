@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".QuizActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
@@ -25,17 +25,30 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/quiz_app_picture__1_" />
 
+        <Button
+            android:id="@+id/NextQuestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#E91E63"
+            android:text="Next"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
         <TextView
-            android:id="@+id/WelcomeTitle"
+            android:id="@+id/QuizTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="Welcome to quiz app"
-            android:textColor="#0D0C0C"
-            android:textColorHint="#000000"
+            android:text="Quiz Time"
             android:textSize="34sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -43,33 +56,46 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/EditText"
+            android:id="@+id/textViewQuestion"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="30dp"
-            android:hint="Enter you name"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="34sp"
+            android:text="Question"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/WelcomeTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/QuizTime" />
 
-        <Button
-            android:id="@+id/StartButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="50dp"
-            android:backgroundTint="#E91E63"
-            android:text="Start Quiz"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <RadioGroup
+            android:id="@+id/radioButtonGroupAnswers"
+            android:layout_width="405dp"
+            android:layout_height="147dp"
+            android:layout_marginTop="36dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQuestion">
+
+            <RadioButton
+                android:id="@+id/radioButtonA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A" />
+
+            <RadioButton
+                android:id="@+id/radioButtonB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="B" />
+
+            <RadioButton
+                android:id="@+id/radioButtonC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="C" />
+        </RadioGroup>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

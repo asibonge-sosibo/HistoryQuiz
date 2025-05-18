@@ -2,21 +2,16 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/QuestionQuiz1"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityQuiz5">
+    tools:context=".ActivityQuestion2">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/QuestionQuiz1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:context=".ActivityQuiz4"
-        tools:ignore="DuplicateIds">
+        tools:context=".QuizActivity2">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
@@ -55,52 +50,54 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/textViewLastQuestion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/AnswerQuestion2"
+                android:layout_width="249dp"
+                android:layout_height="38dp"
                 android:layout_marginTop="50dp"
-                android:text="Last Question"
+                android:text="Answer Correctly"
+                android:textAlignment="center"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textViewLastQuestion5"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="30dp"
-                android:text="World War II ended with Hitler’s surrender in 1945."
-                android:textAlignment="center"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewLastQuestion" />
-
             <RadioGroup
-                android:layout_width="403dp"
-                android:layout_height="131dp"
+                android:layout_width="405dp"
+                android:layout_height="147dp"
                 android:layout_marginTop="70dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewLastQuestion5">
+                app:layout_constraintTop_toBottomOf="@+id/textViewQuestion2">
 
                 <RadioButton
-                    android:id="@+id/radioButtonTrue5"
+                    android:id="@+id/radioButtonTrue2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="True" />
 
                 <RadioButton
-                    android:id="@+id/radioButtonFalse5"
+                    android:id="@+id/radioButtonFalse2"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="wrap_content"
                     android:text="False" />
+
             </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewQuestion2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:text="Hitler was born in Germany."
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AnswerQuestion2" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

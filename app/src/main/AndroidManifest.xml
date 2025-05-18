@@ -13,6 +13,12 @@
         android:theme="@style/Theme.HistoryQuiz"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityQuestion2"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityQuiz2"
+            android:exported="false" />
+        <activity
             android:name=".ActivityQuiz5"
             android:exported="false" />
         <activity

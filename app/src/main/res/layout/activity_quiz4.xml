@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityQuiz3">
+    tools:context=".ActivityQuiz4">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
@@ -44,7 +44,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/AnswerQuestion3"
+            android:id="@+id/AnswerQuestion4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -53,10 +53,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/EditTextName" />
 
         <TextView
-            android:id="@+id/textViewQuestion3"
+            android:id="@+id/textViewQuestion4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -64,32 +64,33 @@
             android:layout_marginEnd="30dp"
             android:text="Question"
             android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/AnswerQuestion3" />
+            app:layout_constraintTop_toBottomOf="@+id/AnswerQuestion4" />
 
         <RadioGroup
             android:layout_width="405dp"
             android:layout_height="147dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="36dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewQuestion3" >
+            app:layout_constraintTop_toBottomOf="@+id/textViewQuestion4" >
 
             <RadioButton
-                android:id="@+id/radioButtonTrue3"
+                android:id="@+id/radioButtonTrue4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="True" />
 
             <RadioButton
-                android:id="@+id/radioButtonFalse3"
+                android:id="@+id/radioButtonFalse4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="False" />
 
             <RadioButton
-                android:id="@+id/radioButtonAll3"
+                android:id="@+id/radioButtonAll4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="All Of The Above" />

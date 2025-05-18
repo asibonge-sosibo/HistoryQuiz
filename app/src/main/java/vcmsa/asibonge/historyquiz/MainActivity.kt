@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.yourapp.QuizActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,18 +21,15 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        // Handle window insets
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.QuestionQuiz1)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        // Initialize views
         startButton = findViewById(R.id.StartButton)
         nameEditText = findViewById(R.id.EditText)
 
-        // Button click event
         startButton.setOnClickListener {
             val name = nameEditText.text.toString().trim()
             if (name.isEmpty()) {

@@ -70,20 +70,21 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewQuestion2">
 
-                <RadioButton
-                    android:id="@+id/radioButtonTrue2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="True" />
+            <RadioButton
+                android:id="@+id/radioButtonTrue2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="True"
+                tools:ignore="DuplicateClickableBoundsCheck" />
 
                 <RadioButton
                     android:id="@+id/radioButtonFalse2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="False" />
+                    android:text="False"
+                    tools:ignore="MissingConstraints" />
 
             </RadioGroup>
-
             <TextView
                 android:id="@+id/textViewQuestion2"
                 android:layout_width="0dp"

@@ -1,15 +1,9 @@
-package HistoryQuiz
+package vcmsa.asibonge.historyquiz
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import vcmsa.asibonge.historyquiz.R
 
 class QuizActivity : AppCompatActivity() {
 
@@ -34,7 +28,7 @@ class QuizActivity : AppCompatActivity() {
         radioButtonTrue = findViewById(R.id.radioButtonTrue1)
         radioButtonFalse = findViewById(R.id.radioButtonFalse1)
         nextButton = findViewById(R.id.NextQuestion)
-        quizImageView = findViewById(R.id.EditTextName)
+        quizImageView = findViewById(R.id.QuestionQuiz1) // Make sure this is an ImageView in XML
 
         nextButton.setOnClickListener {
             val selectedRadioButtonId = radioGroupAnswers.checkedRadioButtonId
@@ -54,7 +48,6 @@ class QuizActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Incorrect. Try again!", Toast.LENGTH_SHORT).show()
             }
-
 
             radioGroupAnswers.clearCheck()
         }

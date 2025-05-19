@@ -1,5 +1,6 @@
 package vcmsa.asibonge.historyquiz
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -25,6 +26,7 @@ class ActivityQuestion2 : AppCompatActivity() {
 
     private val correctAnswer = false
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
